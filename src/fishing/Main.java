@@ -18,6 +18,10 @@ public class Main
         Catch.catches.add(new Junk(1,"Damaged tackle"));
 
         BodyOfWater testBody = new BodyOfWater(1.0,BowSize.POND, BowType.STATIC_FRESH);
-        System.out.println(testBody.getPossibleCatches());
+        System.out.println("Freshwater pond:\t\t" + testBody.getPossibleCatches());
+        testBody = new BodyOfWater(1.0,BowSize.OCEAN_SCALE, BowType.STATIC_SALTWATER);
+        System.out.println("Saltwater ocean:\t\t" + testBody.getPossibleCatches());
+        testBody = new BodyOfWater(1.0,BowSize.LARGE_LAKE, BowType.STATIC_FRESH);
+        System.out.println("Freshwater large lake:\t" + testBody.getPossibleCatches());
     }
 }
