@@ -14,6 +14,7 @@ public abstract class BodyOfWater
 
     public Collection<Catch> getPossibleCatches()
     {
-        return Catch.getAll().stream().filter(c -> c.canExistIn(sizeCategory,type)).collect(Collectors.toCollection(ArrayList::new));
+        // extract the subset of catches that are possible in the given BOW
+        return Catch.getAll().stream().filter(c -> c.canExistIn(this)).collect(Collectors.toCollection(ArrayList::new));
     }
 }

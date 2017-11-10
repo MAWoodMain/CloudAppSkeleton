@@ -1,7 +1,6 @@
 package fishing;
 
-import fishing.map.BowSize;
-import fishing.map.BowType;
+import fishing.map.BodyOfWater;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,7 +13,7 @@ public abstract class Catch {
         this.catchId = catchId;
     }
 
-    public abstract boolean canExistIn(BowSize sizeCategory, BowType type);
+    public abstract boolean canExistIn(BodyOfWater bodyOfWater);
 
     public static Collection<Catch> getAll() {
         return new ArrayList<>();

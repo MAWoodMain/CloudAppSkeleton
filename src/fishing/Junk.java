@@ -1,7 +1,6 @@
 package fishing;
 
-import fishing.map.BowSize;
-import fishing.map.BowType;
+import fishing.map.BodyOfWater;
 
 public class Junk extends Catch
 {
@@ -10,7 +9,7 @@ public class Junk extends Catch
     }
 
     @Override
-    public boolean canExistIn(BowSize sizeCategory, BowType type) {
+    public boolean canExistIn(BodyOfWater bodyOfWater) {
         return true;
     }
 }

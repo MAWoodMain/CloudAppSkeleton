@@ -7,7 +7,7 @@ public enum BowSize {
     LARGE_LAKE(1.5),
     OCEAN_SCALE(2);
 
-    private final double scaleMultiplier;
+    public final double scaleMultiplier;
 
     BowSize(double scaleMultiplier)
     {
