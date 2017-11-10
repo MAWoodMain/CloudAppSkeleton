@@ -1,6 +1,7 @@
 package fishing.map;
 
-public enum BowSize {
+public enum BowSize
+{
     POND(0.5),
     LAKE(1),
     RIVER(1.25),
